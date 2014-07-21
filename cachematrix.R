@@ -44,7 +44,7 @@ cacheSolve <- function(x, ...) {
     message("getting cached data")
     return(matrixInv)
   }
-  ## since there's no value asigned to matrixInv, it calculates, getting first the value of x and then calling the
+  ## since there's no value asigned to matrixInv, it calculates it, getting first the value of x and then calling the
   ## function setsolve to assign the calculated value to matrixInv
   data <- x$get()
   matrixInv <- solve(data,...)
